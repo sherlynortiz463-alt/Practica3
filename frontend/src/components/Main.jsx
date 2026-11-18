@@ -38,7 +38,7 @@ export default function Main({ vista }) {
   ];
 
   const obtenerEventosCultivo = (cultivo, mesIndex) => {
-    const offset = mesIndex % 3;
+    const offset = mesIndex % 3;                                                                                                                                              
     const nombreLimpio = cultivo.split(" ")[0];
     switch (nombreLimpio) {
       case 'Jitomate': return { siembra: [1 + offset, 15], riego: [3, 6, 9, 12, 18, 21, 24, 27, 30], cosecha: [28] };
